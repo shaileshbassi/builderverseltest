@@ -2,6 +2,10 @@
   export let logoName: any;
   export let image: any;
   export let navLinks: any;
+
+  function click(url:any) {
+    window.location.href = url;
+}
 </script>
 
 <header class="text-gray-600 body-font">
@@ -20,7 +24,8 @@
       class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
     >
       {#each navLinks as nav}
-        <a href={nav.url} class="mr-5 hover:text-gray-900">{nav.title}</a>
+      <button on:click={() => click(nav.url)} class="mr-5 hover:text-gray-900">{nav.title}</button>
+
       {/each}
     </nav>
   </div>
