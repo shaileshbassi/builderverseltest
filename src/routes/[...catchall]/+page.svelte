@@ -19,7 +19,7 @@
 <main>
   {#if canShowContent}
     <Content
-      model="page"
+      model="svelte-page"
       content={data.content}
       apiKey={import.meta.env.VITE_BUILDER_PUBLIC_API_KEY}
       customComponents={CUSTOM_COMPONENTS}
