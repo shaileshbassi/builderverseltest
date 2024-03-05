@@ -30,10 +30,6 @@
     {/if}
   </div>
   <div>
-    {#if tabItems && tabItems.length > 0}
-      {#each tabItems as item, index}
-        <CardComponent {item} isActive={index === activeTab} />
-      {/each}
-    {/if}
+        <CardComponent item={tabItems[activeTab]} isActive={activeTab} />
   </div>
 </div>

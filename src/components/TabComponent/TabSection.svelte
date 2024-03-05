@@ -35,7 +35,7 @@
 </script>
 
 {#if !(verticalTabItems)}
-<HorizontalTabSlot  {title} tabItems={horizontalTabItems} {activeTab} >
+<HorizontalTabSlot {title} tabItems={horizontalTabItems} {activeTab} >
   <svelte:fragment let:index={index} let:tab={tab} slot="horizontal">
   <button
     class="{index === activeTab

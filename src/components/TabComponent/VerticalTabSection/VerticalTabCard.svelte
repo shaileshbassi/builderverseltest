@@ -14,12 +14,12 @@
     tabCardItem: CardItem[];
   }
   export let item: TabItem;
-  export let isActive: boolean; // New property to determine if this card is active
+  export let isActive: number; // New property to determine if this card is active
 </script>
 
 <div
   class={isActive !== undefined
-    ? isActive
+    ? isActive>=0
       ? "lg:flex lg:px-4 lg:py-2 "
       : "hidden"
     : "lg:flex md:p-2 lg:mx-[65px]"}

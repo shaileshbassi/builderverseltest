@@ -7,10 +7,10 @@
       cardButtonUrl: string;
     }
     export let item: cardItem;
-    export let isActive: boolean; // New property to determine if this card is active
+    export let isActive: number; // New property to determine if this card is active
 </script>
   
-<div data-testid='container-div' class={isActive !== undefined ? (isActive ? "lg:flex lg:px-8 lg:py-2" : "hidden") : "lg:flex lg:flex-row-reverse md:p-2 lg:mx-[65px]"}>
+<div data-testid='container-div' class={isActive !== undefined ? (isActive>=0 ? "lg:flex lg:px-8 lg:py-2" : "hidden") : "lg:flex lg:flex-row-reverse md:p-2 lg:mx-[65px]"}>
   <img
     src={item?.cardImage}
     class="width:100% object-cover lg:h-[350px] mb-2 lg:w-[50%] mt-8 lg:order-1"

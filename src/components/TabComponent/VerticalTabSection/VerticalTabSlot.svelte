@@ -45,11 +45,7 @@
         {/if}
       </div>
       <div class="lg:w-[65%] lg:bg-white lg:rounded-lg lg:my-8">
-        {#if tabItems && tabItems.length > 0}
-          {#each tabItems as item, index}
-            <VerticalTabCard item={item} isActive={index === activeTab} />
-          {/each}
-        {/if}
+            <VerticalTabCard item={tabItems[activeTab]} isActive={activeTab} />
       </div>
     </div>
     </div>
