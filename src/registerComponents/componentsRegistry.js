@@ -1,12 +1,7 @@
 // Create an array of your custom compon ents and their properties
-// @ts-ignore
-
   import Carousel from "../components/Carousel/carousel.svelte";
-  // @ts-ignore
   import CardSlider from '../components/CardSlider/SliderCard.svelte'
-  // @ts-ignore
   import Header from '../components/Header/Header.svelte'
-  // @ts-ignore
   import TabSection from '../components/TabComponent/TabSection.svelte'
   
   export const CUSTOM_COMPONENTS = [

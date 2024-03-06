@@ -45,7 +45,9 @@
         {/if}
       </div>
       <div class="lg:w-[65%] lg:bg-white lg:rounded-lg lg:my-8">
+        {#if tabItems && tabItems.length > 0}
             <VerticalTabCard item={tabItems[activeTab]}  />
+        {/if}
       </div>
     </div>
     </div>

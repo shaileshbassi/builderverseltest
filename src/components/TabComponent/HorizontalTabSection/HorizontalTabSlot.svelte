@@ -30,6 +30,8 @@
     {/if}
   </div>
   <div>
+    {#if tabItems && tabItems.length > 0}
         <CardComponent item={tabItems[activeTab]}  />
+    {/if}
   </div>
 </div>
